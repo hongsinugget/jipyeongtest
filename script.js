@@ -77,7 +77,7 @@ const questions = [
     ]
   },
   {
-    q: '전생 내 하루를 마치며 나는?',
+    q: '전생에 있던 하루를 마치며 나는?',
     options: [
       { text: '오늘은 들판을 걷고 구름을 느꼈다, 평화로운 하루', scores: { sky_wind: 2, artist: 2, harvest: 1 } },
       { text: '오늘 마을 사람들이 다 같이 웃었네, 흥 폭발 성공!', scores: { musician: 2, hero: 1, balance: 1 } },
