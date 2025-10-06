@@ -11,8 +11,7 @@ https://jipyeongtest.site
 
 테스트 본문 기획   
 **한승진 / Brown Han / J / 제이포웹 대표**   
-외부링크: <[www.jforweb.com>](https://www.jforweb.com/)>   
-www.jforweb.com   
+외부링크:www.jforweb.com   
 [링크드인](https://www.linkedin.com/in/seung-jin-han-73785a170/,"linkedin-seung-jin-han)   
    
 기획 디자인,개발   
