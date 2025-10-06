@@ -61,43 +61,43 @@ const characters = {
 // 질문 데이터
 const questions = [
   {
-    q: '200년 전, 마을에 처음 도착한 나, 제일 먼저 한 일은?',
+    q: '200년 전 마을에 도착한 나, 가장 먼저 본 것은?',
     options: [
-      { text: '음… 이 마을 풍경과 공기를 좀 느껴봐야지', scores: { sky_wind: 2, artist: 2, harvest: 1 } },
-      { text: '와, 잔치 한판 벌어졌네! 바로 달려가야지', scores: { musician: 2, hero: 2, balance: 1 } },
-      { text: '누구한테 배워서 돈이나 벌어볼까?', scores: { chef: 2, harvest: 1, guardian: 1 } }
+      { text: '지평선까지 펼쳐진 들판의 평온함', scores: { sky_wind: 2, artist: 2, balance: 1 } },
+      { text: '곳곳에서 들리는 사람들의 웃음소리', scores: { musician: 2, hero: 2, chef: 1 } },
+      { text: '대대로 이어진 마을의 든든한 건물들', scores: { guardian: 2, harvest: 2, balance: 1 } }
     ]
   },
   {
-    q: '마을 사람들이 모여있는 광장에서 나는?',
+    q: '마을에 문제가 생겼을 때 나는?',
     options: [
-      { text: '하늘 높이 연을 날리며 소원을 빌어야지!', scores: { sky_wind: 2, artist: 1, harvest: 1 } },
-      { text: '오~ 다 같이 춤추고 북 치면서 신나게 놀아야지', scores: { musician: 2, hero: 1, balance: 1 } },
-      { text: '오늘은 맛있는 걸 만들어서 모두에게 나눠주자', scores: { chef: 2, harvest: 1, guardian: 1 } }
+      { text: '상황을 차분히 파악하고 신중하게 접근', scores: { balance: 2, guardian: 2, sky_wind: 1 } },
+      { text: '모든 사람을 모아 함께 해결책 찾기', scores: { hero: 2, musician: 2, guardian: 1 } },
+      { text: '내가 할 수 있는 실질적 도움부터 시작', scores: { chef: 2, harvest: 2, artist: 1 } }
     ]
   },
   {
-    q: '전생에 있던 하루를 마치며 나는?',
+    q: '하루 중 가장 좋아하는 시간은?',
     options: [
-      { text: '오늘은 들판을 걷고 구름을 느꼈다, 평화로운 하루', scores: { sky_wind: 2, artist: 2, harvest: 1 } },
-      { text: '오늘 마을 사람들이 다 같이 웃었네, 흥 폭발 성공!', scores: { musician: 2, hero: 1, balance: 1 } },
-      { text: '오늘 만든 음식이 모두에게 행복을 줬다, 마음이 풍족해', scores: { chef: 2, harvest: 1, guardian: 1 } }
+      { text: '해질녘, 하늘을 보며 하루를 되돌아보기', scores: { sky_wind: 2, artist: 2, balance: 1 } },
+      { text: '저녁, 모두와 둘러앉아 이야기 나누기', scores: { musician: 2, chef: 2, hero: 1 } },
+      { text: '이른 아침, 새 하루를 준비하며 계획 세우기', scores: { harvest: 2, guardian: 2, chef: 1 } }
     ]
   },
   {
-    q: '마을 축제가 한창, 나는 무엇을 가장 신나게 즐겼을까?',
+    q: '마을 사람들이 나에게 자주 부탁하는 일은?',
     options: [
-      { text: '하늘 높이 연을 띄우며 바람과 함께 날아가는 기분!', scores: { sky_wind: 2, artist: 1, harvest: 1 } },
-      { text: '모두와 함께 음악과 춤으로 흥을 폭발시키기!', scores: { musician: 2, hero: 2, balance: 1 } },
-      { text: '맛있는 음식을 만들고 나누며 모두를 행복하게!', scores: { chef: 2, harvest: 1, guardian: 1 } }
+      { text: '좀 더 재미있게 만들어줄래?', scores: { musician: 2, artist: 2, hero: 1 } },
+      { text: '이 일 어떻게 하면 잘 될까?', scores: { balance: 2, guardian: 2, sky_wind: 1 } },
+      { text: '우리 모두를 위해 뭔가 만들어줄래?', scores: { chef: 2, harvest: 2, artist: 1 } }
     ]
   },
   {
-    q: '현대로 돌아온 나, 내가 남긴 것은?',
+    q: '200년 후 사람들이 나를 기억한다면?',
     options: [
-      { text: '하늘을 올려다보며 남긴 그림과 기록', scores: { sky_wind: 2, artist: 2, harvest: 1 } },
-      { text: '함께 즐기던 흥겨운 추억과 웃음', scores: { musician: 2, hero: 2, balance: 1 } },
-      { text: '맛있는 음식과 풍요로운 나눔의 흔적', scores: { chef: 2, harvest: 1, guardian: 1 } }
+      { text: '항상 평화롭고 지혜로웠던 사람', scores: { sky_wind: 2, balance: 2, guardian: 1 } },
+      { text: '모두를 하나로 만들고 즐겁게 해준 사람', scores: { hero: 2, musician: 2, chef: 1 } },
+      { text: '무언가를 만들어내고 남겨준 사람', scores: { artist: 2, harvest: 2, chef: 1 } }
     ]
   }
 ];
