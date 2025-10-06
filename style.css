@@ -69,6 +69,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    white-space: nowrap; /* 줄바꿈 방지 */
+    width: auto;
 }
 
 .btn-primary:hover {
@@ -184,14 +186,13 @@ body {
 }
 
 .character-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  object-fit: contain;
-  margin: 0 auto 20px;
-  display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 20px;
+    display: block;
 }
-
 
 .character-name {
     font-size: 2rem;
@@ -396,8 +397,11 @@ body {
     
     .btn-primary {
         font-size: 1rem;
-        padding: 15px 30px;
+        padding: 12px 28px;
         top: 82%;
+        white-space: nowrap; /* 줄바꿈 방지 */
+        max-width: 85%; /* 화면에서 너무 넓어지지 않도록 */
+        gap: 8px;
     }
 
     .question-text {
@@ -410,8 +414,8 @@ body {
     }
 
     .character-image {
-        width: 200px;
-        height: 200px;
+        max-width: 100%;
+        height: auto;
     }
 
     .character-name {
@@ -433,5 +437,19 @@ body {
 
     .modal-content {
         padding: 30px 20px;
+    }
+}
+
+/* 아주 작은 화면 (갤럭시 폴드 등) */
+@media (max-width: 400px) {
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 10px 22px;
+        gap: 6px;
+        top: 80%;
+    }
+    
+    .arrow {
+        font-size: 1.2rem;
     }
 }
