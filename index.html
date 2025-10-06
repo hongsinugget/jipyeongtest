@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나는 전생에 어떤 장인이었을까?</title>
+
+    <!-- Open Graph 메타 태그 (공유용) -->
+    <meta property="og:title" content="지평선에서의 전생테스트">
+    <meta property="og:description" content="200년 전 마을로 떠나는 시간여행! 나는 전생에 어떤 장인이었을까?">
+    <meta property="og:image" content="https://jipyeongtest.site/share-image.png">
+    <meta property="og:url" content="https://jipyeongtest.site">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="지평선에서의 전생테스트">
+    <meta name="twitter:description" content="200년 전 마을로 떠나는 시간여행!">
+    <meta name="twitter:image" content="https://jipyeongtest.site/share-image.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 인트로 화면 -->
+    <div id="intro-screen" class="screen active">
+        <div class="container">
+            <div class="content-box">
+                <img class="main-image" src="image/main.png" alt="지평선 축제 전생테스트" />
+                <button id="start-btn" class="btn-primary">
+                    테스트 시작하기
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 퀴즈 화면 -->
+    <div id="quiz-screen" class="screen">
+        <div class="container">
+            <div class="quiz-content-box">
+                <div class="progress-section">
+                    <span id="progress-text" class="progress-text">질문 1 / 5</span>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <h2 id="question-text" class="question-text"></h2>
+
+                <div id="options-container" class="options-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 결과 화면 -->
+    <div id="result-screen" class="screen">
+        <div class="container">
+            <div class="result-content-box" id="result-content">
+                <h2 class="result-title">당신의 전생은...</h2>
+
+                <div id="result-character" class="result-character">
+                    <img id="character-image" class="character-image" src="" alt="캐릭터 이미지" />
+                    <h3 id="character-name" class="character-name"></h3>
+                    <p id="character-desc" class="character-desc"></p>
+                </div>
+
+                <div class="programs-section">
+                    <h4 class="programs-title">추천 프로그램</h4>
+                    <div id="programs-list" class="programs-list"></div>
+                </div>
+
+                <div class="festival-info">
+                    <h4 class="festival-title">제27회 김제지평선축제</h4>
+                    <p class="festival-desc">
+                        드넓은 지평선이 펼쳐진 김제에서 펼쳐지는 대한민국 대표 농경문화축제!<br>
+                        전통과 현대가 어우러진 다채로운 프로그램을 경험해보세요.<br>
+                        일시 : 2025. 10. 8.(수) ~ 10. 12.(일) 5일간
+                    </p>
+                    <a href="https://festival.gimje.go.kr/" target="_blank" class="btn-festival">
+                        지평선 축제 보러가기
+                    </a>
+                </div>
+
+                <div class="button-group">
+                    <button id="share-btn" class="btn-share">
+                        📤 결과 공유하기
+                    </button>
+                    <button id="restart-btn" class="btn-secondary">
+                        🔄 다시 테스트하기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 공유 모달 -->
+    <div id="share-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title">결과 공유하기</h3>
+
+            <div class="share-buttons">
+                <button id="copy-link-btn" class="share-option">
+                    🔗 링크 복사하기
+                </button>
+                <button id="download-image-btn" class="share-option">
+                    📷 이미지로 저장하기
+                </button>
+            </div>
+
+            <div id="copy-message" class="copy-message">링크가 복사되었습니다!</div>
+        </div>
+    </div>
+
+    <!-- Canvas for image generation -->
+    <canvas id="result-canvas" style="display: none;"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
