@@ -61,43 +61,43 @@ const characters = {
 // 질문 데이터
 const questions = [
   {
-    q: '200년 전 마을에 도착한 나, 가장 먼저 본 것은?',
+    q: '200년 전, 마을에 처음 도착한 나. 가장 먼저 끌린 곳은?',
     options: [
-      { text: '지평선까지 펼쳐진 들판의 평온함', scores: { sky_wind: 2, artist: 2, balance: 1 } },
-      { text: '곳곳에서 들리는 사람들의 웃음소리', scores: { musician: 2, hero: 2, chef: 1 } },
-      { text: '대대로 이어진 마을의 든든한 건물들', scores: { guardian: 2, harvest: 2, balance: 1 } }
+      { text: '넓게 펼쳐진 들판, 바람이 불어오는 곳', scores: { sky_wind: 2, artist: 2, harvest: 1 } },
+      { text: '사람들이 모여 웃고 떠드는 광장', scores: { musician: 2, hero: 2, balance: 1 } },
+      { text: '고즈넉한 제방, 물이 흐르는 벽골제', scores: { guardian: 2, chef: 1, harvest: 1 } }
     ]
   },
   {
-    q: '마을에 문제가 생겼을 때 나는?',
+    q: '마을 축제 준비를 돕게 되었다. 나는 어떤 역할을 맡았을까?',
     options: [
-      { text: '상황을 차분히 파악하고 신중하게 접근', scores: { balance: 2, guardian: 2, sky_wind: 1 } },
-      { text: '모든 사람을 모아 함께 해결책 찾기', scores: { hero: 2, musician: 2, guardian: 1 } },
-      { text: '내가 할 수 있는 실질적 도움부터 시작', scores: { chef: 2, harvest: 2, artist: 1 } }
+      { text: '하늘 높이 연을 날리며 소원을 모으는 일', scores: { sky_wind: 2, artist: 1, harvest: 1 } },
+      { text: '사람들과 함께 줄다리기를 이끄는 일', scores: { hero: 2, balance: 2, musician: 1 } },
+      { text: '마을 잔치 음식을 준비하고 나누는 일', scores: { chef: 2, harvest: 1, guardian: 1 } }
     ]
   },
   {
-    q: '하루 중 가장 좋아하는 시간은?',
+    q: '갑자기 큰 비가 내려 마을에 문제가 생겼다. 나는?',
     options: [
-      { text: '해질녘, 하늘을 보며 하루를 되돌아보기', scores: { sky_wind: 2, artist: 2, balance: 1 } },
-      { text: '저녁, 모두와 둘러앉아 이야기 나누기', scores: { musician: 2, chef: 2, hero: 1 } },
-      { text: '이른 아침, 새 하루를 준비하며 계획 세우기', scores: { harvest: 2, guardian: 2, chef: 1 } }
+      { text: '침착하게 물길을 살피며 해결책을 찾는다', scores: { guardian: 2, balance: 2, sky_wind: 1 } },
+      { text: '모두를 모아 힘을 합쳐 위기를 넘긴다', scores: { hero: 2, musician: 1, balance: 1 } },
+      { text: '피해 입은 이웃에게 따뜻한 음식을 나눈다', scores: { chef: 2, harvest: 2, artist: 1 } }
     ]
   },
   {
-    q: '마을 사람들이 나에게 자주 부탁하는 일은?',
+    q: '마을 사람들이 힘든 일을 겪고 있다. 나는 어떻게 위로할까?',
     options: [
-      { text: '좀 더 재미있게 만들어줄래?', scores: { musician: 2, artist: 2, hero: 1 } },
-      { text: '이 일 어떻게 하면 잘 될까?', scores: { balance: 2, guardian: 2, sky_wind: 1 } },
-      { text: '우리 모두를 위해 뭔가 만들어줄래?', scores: { chef: 2, harvest: 2, artist: 1 } }
+      { text: '들판을 함께 걸으며 조용히 이야기를 들어준다', scores: { sky_wind: 2, artist: 2, harvest: 1 } },
+      { text: '북과 장구를 울리며 흥겨운 가락으로 마음을 풀어준다', scores: { musician: 2, hero: 1, balance: 1 } },
+      { text: '정성껏 음식을 만들어 함께 나눠 먹는다', scores: { chef: 2, guardian: 1, harvest: 1 } }
     ]
   },
   {
-    q: '200년 후 사람들이 나를 기억한다면?',
+    q: '200년이 흘러 현대로 돌아왔다. 내가 마을에 남긴 것은?',
     options: [
-      { text: '항상 평화롭고 지혜로웠던 사람', scores: { sky_wind: 2, balance: 2, guardian: 1 } },
-      { text: '모두를 하나로 만들고 즐겁게 해준 사람', scores: { hero: 2, musician: 2, chef: 1 } },
-      { text: '무언가를 만들어내고 남겨준 사람', scores: { artist: 2, harvest: 2, chef: 1 } }
+      { text: '하늘을 나는 연처럼, 자유롭고 아름다운 정신', scores: { sky_wind: 2, artist: 2, balance: 1 } },
+      { text: '함께 줄을 당기며 만든, 단결과 협동의 전통', scores: { hero: 2, musician: 2, guardian: 1 } },
+      { text: '풍요로운 들판처럼, 나눔과 풍년의 마음', scores: { harvest: 2, chef: 2, guardian: 1 } }
     ]
   }
 ];
